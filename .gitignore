@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+*.tsbuildinfo
+.DS_Store
+coverage/
+.nyc_output/
+
+# Local Zerodha/Hushh credentials and sessions
+.hushh/
+session.json
+*session*.json
+*secret*
+*token*

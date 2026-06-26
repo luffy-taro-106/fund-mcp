@@ -1,0 +1,28 @@
+{
+  "name": "fund-mcp",
+  "version": "0.1.0",
+  "description": "Fund MCP: read-only broker decision-learning connector with private ingestion and public learning modes",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "fund-mcp": "bin/fund-mcp.js"
+  },
+  "files": [
+    "README.md",
+    "bin/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "print-config": "node ./bin/fund-mcp.js --print-config",
+    "print-public-config": "node ./bin/fund-mcp.js --print-public-config",
+    "print-codex-toml": "node ./bin/fund-mcp.js --print-codex-toml"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}
